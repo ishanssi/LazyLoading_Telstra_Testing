@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout">
+
+            <ImageView
+                android:id="@+id/iv_flag"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:contentDescription="@string/str_iv_flag"
+                android:src="@drawable/no_preview"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="aaaaaaaaaa"
+            android:layout_toEndOf="@+id/frameLayout" />
+
+        <TextView
+            android:id="@+id/tv_country_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdasdasdasd\nadasdasda\nsdasdasd\nasdsad"
+            android:layout_below="@+id/tv_country"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/frameLayout" />
+    </RelativeLayout>
+
+</RelativeLayout>
